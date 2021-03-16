@@ -1,0 +1,205 @@
+/* LAYOUT */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: calc(100% - 30px);
+    width: 970px;
+    margin: 10px auto 50px auto;
+    padding: 0 15px;
+}
+
+h1 {
+    margin: 50px 20px 20px;
+    font-size: 2.5em;
+}
+
+h2, h3 {
+    margin-top: 30px;
+}
+
+sup {
+    font-size: 50%;
+    position: relative;
+    display: inline;
+}
+
+p {
+    text-align: justify;
+}
+
+pre {
+    background-color: #242526;
+}
+
+.comparison {
+    margin: 0 auto;
+}
+
+/* THEME */
+
+body {
+    text-align: center;
+    justify-content: center;
+    background-color: #000;
+    color: #FFC300;
+    font-family: "Open Sans", sans-serif;
+}
+
+.align-left {
+    text-align: left;
+    justify-content: left;
+}
+
+.line-height20 {
+    line-height: 2;
+}
+
+.white {
+    color: white;
+}
+
+h1.subtitle {
+    font-style: italic;
+    font-size: 120%;
+    margin: 20px 20px 30px;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: #FFC300;
+}
+
+h3 {
+    color: white;
+}
+
+a:visited {
+    color: #FFC300;
+}
+
+.break {
+    height: 0;
+    border-bottom: #FFC300 2px solid;
+}
+
+/* HIDING TEXT */
+
+i {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    -webkit-transition-duration: 1s;
+    /* Safari */
+    transition-duration: 1s;
+}
+
+i:hover {
+    border: solid #FFC300;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 6px;
+    -webkit-transition-duration: 1s;
+    /* Safari */
+    transition-duration: 1s;
+}
+
+.up {
+    transform: rotate(-180deg) scaleX(.75) scaleY(.75) translate(5px, 5px);
+    transition-duration: 1s;
+    -webkit-transform: rotate(-180deg) scaleX(.75) scaleY(.75) translate(5px, 5px);
+}
+
+.down {
+    transform: rotate(0deg);
+    transition-duration: 1s;
+    -webkit-transform: rotate(0deg);
+}
+
+.toggleHide {
+    display: inline-block;
+    margin: 0 10px 10px 7px;
+}
+
+/* MAP */
+
+#map {
+    height: 500px;
+}
+
+.leaflet-tile {
+    filter: grayscale(1) invert(1) brightness(1.2);
+}
+
+.leaflet-container a {
+    color: #000000;
+    font-size: 1em;
+}
+
+.leaflet-popup-content {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* COMPARISON */
+
+.comparison {
+    position: relative;
+}
+
+.img-left, .img-right {
+    display: block;
+    vertical-align: middle;
+}
+
+.img-comp-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-comp-overlap {
+    overflow: hidden;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #FFC300;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.yellow-code {
+    background-color: yellow;
+    display: inline-block;
+    color:black
+}
+
+.darksalmon-code {
+    background-color: darksalmon;
+    display: inline-block;
+    color:black
+}
+
+.lightseagreen-code {
+    background-color: lightseagreen;
+    display: inline-block;
+    color:black
+}
+
+.deeppink-code {
+    background-color: deeppink;
+    display: inline-block;
+    color:black
+}
